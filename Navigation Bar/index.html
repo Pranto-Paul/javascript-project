@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <label for="" class="logo">PKP Paul</label>
+        <ul id="list">
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contct</a></li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+        <label for="" id="icon" onclick="myFunction()">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+    </nav>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function myFunction(){
+        
+            if (document.getElementById("list").style.display == "none"){
+                document.getElementById("list").style.cssText = "display : block; " ;
+            }
+            else{
+                document.getElementById("list").style.cssText = "display : none;" ;
+        }
+    }
+    </script>
+
+</body>
+
+</html>
